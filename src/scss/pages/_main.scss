@@ -45,7 +45,6 @@ MAIN PAGE
 }
 
 .main-block-image__title {
-	@include vertical-align();
 	@include fontSize(80px);
 	margin: 0;
 	font-weight: 500;

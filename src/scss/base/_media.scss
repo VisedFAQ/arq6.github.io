@@ -31,9 +31,26 @@ MEDIA QUERIES
     .menu-btn {
         display: none;
     }
+    .main-block-image__title {
+        @include vertical-align();
+    }
 }
 
 @media (max-width: 807px) {
+    .header-social {
+        flex-direction: row;
+        bottom: 20px;
+        justify-content: center; 
+        left: 0;
+        right: 0;
+        top: auto;
+    }
+    .header-social__link {
+        padding: 0 15px;
+    }
+    .main-block-image__title {
+        padding-top: 10%;
+    }
     .process {
         flex-wrap: wrap;
     }
@@ -53,9 +70,6 @@ MEDIA QUERIES
 
 @media (max-width: 670px) {
     .swiper-button-prev, .swiper-button-next {
-        display: none;
-    }
-    .header-social {
         display: none;
     }
     .swiper-container {
