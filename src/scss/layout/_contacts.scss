@@ -1,0 +1,46 @@
+/*
+===================================================
+CONTACT BLOCK
+===================================================
+*/
+
+.contact-block__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.office-block {
+    text-align: center;
+    color: #fff;
+}
+
+.office-block__title {
+    @include fontSize(36px);
+    font-weight: 300;
+}
+
+.office-block__desc {
+    @include fontSize(24px);
+    font-weight: 300;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0 60px;
+}
+
+.social__link {
+    display: block;
+    margin: 0 15px;
+    i {
+        font-size: 22px;
+    }
+    &:hover {
+        i:before {
+            color: $color-blue;
+        }
+    }
+}

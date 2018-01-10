@@ -1,0 +1,57 @@
+/*
+===================================================
+CONTACT PAGE
+===================================================
+*/
+
+.office {
+    display: flex;
+    padding-top: 100px;
+    &:last-child {
+        padding-bottom: 50px;
+    }
+}
+
+.office__desc {
+    width: 50%;
+    color: #fff;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    margin-right: 35px;
+    border-bottom: 2px solid $color-blue;
+}
+
+.office__map {
+    width: 50%;
+}
+
+.office__land {
+    text-transform: uppercase;
+    @include fontSize(50px);
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.office__location {
+    text-transform: uppercase;
+    @include fontSize(30px);
+    font-weight: 400;
+    margin: 0;
+}
+
+.office__adress {
+    @include fontSize(16px);
+    color: $light-grey;
+}
+
+.office__phone {
+    @include fontSize(24px);
+    letter-spacing: 2.4px;
+    font-weight: 300;
+}
+
+.office__mail {
+    @include fontSize(16px);
+    color: $light-grey;
+}

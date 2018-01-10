@@ -1,0 +1,83 @@
+/*
+===================================================
+PEOPLE PAGE
+===================================================
+*/
+
+.people-wrap {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 7px;
+	margin-bottom: 50px;
+}
+
+.member {
+	position: relative;
+	font-size: 0;
+	&:nth-child(1), &:nth-child(4) {
+		grid-row: span 2;
+		grid-column: span 2;
+	}
+}
+
+.member__img {
+	width: 100%;
+	transition: all 0.4s ease;
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
+}
+
+.member__desc {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease;
+	        transition: opacity 0.5s ease;
+}
+
+.member:hover {
+	.member__img {
+		-webkit-filter: grayscale(100%);
+		        filter: grayscale(100%);
+	}
+}
+
+.member:hover .member__desc {
+	opacity: 1;
+	.member__name {
+		&::after {
+			width: 100%;
+		}
+	}
+}
+
+.member__name {
+	text-transform: uppercase;
+	color: #ffffff;
+	display: block;
+	@include fontSize(20px);
+	letter-spacing: 1.6px;
+	font-weight: bold;
+	position: relative;
+	text-shadow: 1px 1px 5px black;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 2px;
+		background: $color-blue;
+		width: 0;
+		-webkit-transition: width 0.8s ease;
+		        transition: width 0.8s ease;
+	}
+}
+
+.member__position {
+	text-align: right;
+	display: block;
+	color: $light-grey;
+	@include fontSize(17px);
+	padding-top: 10px;
+}

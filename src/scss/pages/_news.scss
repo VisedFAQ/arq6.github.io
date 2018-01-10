@@ -1,0 +1,60 @@
+/*
+===================================================
+NEWS PAGE
+===================================================
+*/
+
+.news {
+    position: relative;
+}
+
+.news__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 100px;
+}
+
+.news-item {
+    width: 33%;
+    padding: 0 7px 30px;
+    box-sizing: border-box;
+}
+
+.news__img {
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.news__date {
+    display: block;
+    color: $light-grey;
+}
+
+.news__title {
+    text-transform: uppercase;
+    @include fontSize(24px);
+    font-weight: 300;
+    color: #fff;
+}
+
+.news__excerpt {
+    @include fontSize(18px);
+    font-weight: 300;
+    color: $light-grey;
+}
+
+.news__more {
+    @include fontSize(24px);
+    color: $color-blue;
+}
+
+.to-top {
+    position: absolute;
+    right: 9%;
+    bottom: 70px;
+}
+
+.to-top__arrow {
+    height: 25px;
+}

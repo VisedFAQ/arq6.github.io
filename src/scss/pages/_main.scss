@@ -1,0 +1,139 @@
+/*
+===================================================
+MAIN PAGE
+===================================================
+*/
+
+.exploring {
+	padding: 65px 0;
+	display: flex;
+}
+
+.process {
+	display: flex;
+}
+
+.main-block-info {
+	width: 50%;
+	box-sizing: border-box;
+	background: #313131;
+	color: #ffffff;
+	padding: 0 15px 30px;
+	text-align: right;
+	@include fontSize(24px);
+	font-weight: 300;
+}
+
+.main-block-info__desc {
+	padding: 125px 0 100px;
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.main-block-info__link {
+    color: $color-blue;
+    margin-right: 60px;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.main-block-image {
+	width: 50%;
+	text-align: center;
+}
+
+.main-block-image__title {
+	@include vertical-align();
+	@include fontSize(80px);
+	margin: 0;
+	font-weight: 500;
+	padding: 0 15px;
+	color: #ffffff;
+	strong {
+		font-weight: 500;
+		color: #000000;
+		@include fontSize(100px);
+	}
+	span {
+		color: #464646;
+		@include fontSize(100px);
+	}
+}
+
+.exploring__img {
+	background: url(../img/exploring-art.jpg) center center no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.process__img {
+	background: url(../img/process.jpg) center center no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.services-block__wrap {
+	display: flex;
+	text-align: center;
+	color: #ffffff;
+}
+
+.services-block__single {
+	width: 25%;
+    padding: 25px 15px;
+    &:nth-child(1) {
+        background: #000;
+    }
+    &:nth-child(2) {
+        background: #464646;
+    }
+    &:nth-child(3) {
+        background: #8f8f8f;
+        .services-block__link {
+            color: #000;
+            &::before {
+                color: inherit;
+            }
+        }
+    }
+    &:nth-child(4) {
+        background: #fff;
+        .services-block__link {
+            &::before {
+                color: #000;
+            }
+        }
+    }
+}
+
+.services-block__icon {
+	height: 80px;
+}
+
+.services-block__title {
+	@include fontSize(30px);
+	font-weight: 300;
+	letter-spacing: 6px;
+	max-width: 250px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.services-block__description {
+    line-height: 24px;
+    max-width: 200px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.services-block__link {
+    &::before {
+        font-size: 11px;
+    }
+}
+
+.vr-block {
+    color: #000;
+}

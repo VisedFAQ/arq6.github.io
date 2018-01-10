@@ -1,0 +1,19 @@
+/*
+===================================================
+SERVICES PAGE
+===================================================
+*/
+
+.services {
+    margin-bottom: 50px;
+}
+
+.service__img {
+    width: 100%;
+}
+
+.service__desc {
+    @include fontSize(24px);
+    color: #fff;
+    font-weight: 300;
+}

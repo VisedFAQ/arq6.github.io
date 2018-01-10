@@ -1,0 +1,26 @@
+/*
+===================================================
+PROJECT PAGE
+===================================================
+*/
+
+.project {
+    margin-top: 50px;
+}
+
+.project .wrap {
+    color: #fff;
+}
+
+.project__paragraph {
+    padding: 25px 0;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.project__heading {
+    @include fontSize(24px);
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-weight: 300;
+}

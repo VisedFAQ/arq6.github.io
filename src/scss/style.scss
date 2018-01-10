@@ -1,0 +1,32 @@
+// Fonts
+@import "base/fonts";
+@import "base/icons";
+
+// Vendors
+@import "vendors/swiper.min";
+@import "vendors/photoswipe";
+@import "vendors/pushy";
+
+// Utils
+@import "utils/variables";
+@import "utils/mixins";
+
+// Base
+@import "base/normalize";
+
+// Layouts
+@import "layout/_header.scss";
+@import "layout/_contacts.scss";
+@import "layout/_footer.scss";
+
+// Pages
+@import "pages/_main.scss";
+@import "pages/_contact.scss";
+@import "pages/_news.scss";
+@import "pages/_project.scss";
+@import "pages/_services.scss";
+@import "pages/_people.scss";
+@import "pages/_still-image.scss";
+
+// Media Queries
+@import "base/media";

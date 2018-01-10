@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'arq6';
+    src:  url('fonts/arq6.eot?2o50kz');
+    src:  url('fonts/arq6.eot?2o50kz#iefix') format('embedded-opentype'),
+      url('fonts/arq6.ttf?2o50kz') format('truetype'),
+      url('fonts/arq6.woff?2o50kz') format('woff'),
+      url('fonts/arq6.svg?2o50kz#arq6') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'arq6' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-back:before {
+    content: "\e900";
+    color: #fff;
+  }
+  .icon-next:before {
+    content: "\e901";
+    color: #fff;
+  }
+  .icon-linkedin:before {
+    content: "\e902";
+    color: #fff;
+  }
+  .icon-instagram:before {
+    content: "\e903";
+    color: #fff;
+  }
+  .icon-facebook:before {
+    content: "\e904";
+    color: #fff;
+  }
+  .icon-youtube:before {
+    content: "\e905";
+    color: #fff;
+  }
+  

@@ -1,0 +1,50 @@
+doctype html
+html
+    head(lang="en")
+        include base/meta.pug
+        include base/styles.pug
+        title Arq6 - Home Page
+    body
+        include layout/header.pug
+        .content
+            .exploring
+                .main-block-info
+                    p.main-block-info__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+                    a.main-block-info__link.read-more(href="#") Read More
+                .main-block-image
+                    .exploring__img
+                        h2.main-block-image__title Exploring<br><strong>The</strong> <span>Art</span>
+            .process
+                .main-block-image
+                    .process__img
+                        h2.main-block-image__title Our<br><strong>Proc</strong><span>ess</span>
+                .main-block-info
+                    p.main-block-info__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+                    a.main-block-info__link.read-more(href="#") Read More
+            .services-block
+                h2.title Our Services
+                .services-block__wrap
+                    .still-block.services-block__single
+                        img.services-block__icon(src="img/still.svg", alt="STILL IMAGES")
+                        h3.services-block__title STILL IMAGES
+                        p.services-block__description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        a(href="#").services-block__link.read-more Read More
+                    .motion-block.services-block__single
+                        img.services-block__icon(src="img/motion.svg", alt="MOTION IMAGES")
+                        h3.services-block__title MOTION IMAGES
+                        p.services-block__description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        a(href="#").services-block__link.read-more Read More
+                    .animation-block.services-block__single
+                        img.services-block__icon(src="img/animation.svg", alt="ANIMATION & FILMS")
+                        h3.services-block__title ANIMATION &AMP; FILMS
+                        p.services-block__description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        a(href="#").services-block__link.read-more Read More
+                    .vr-block.services-block__single
+                        img.services-block__icon(src="img/vr.svg", alt="VR & AR SOLUTIONS")
+                        h3.services-block__title VR &AMP; AR SOLUTIONS
+                        p.services-block__description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        a(href="#").services-block__link.read-more Read More
+        include layout/contacts.pug
+        include layout/social.pug
+        include layout/footer.pug
+        include base/scripts.pug

@@ -1,0 +1,45 @@
+doctype html
+html
+    head(lang="en")
+        include base/meta.pug
+        include base/styles.pug
+        title Arq6 - News
+    body
+        include layout/header.pug
+        .content.news
+            h1.title Our news
+            .news__wrap.wrap
+                .news-item
+                    img(src="img/news.jpg", alt="Lorem ipsum").news__img
+                    span.news__date 08/08/2018
+                    h2.news__title Lorem ipsum dolor sit consectetur adipisi
+                    p.news__excerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    a(href="#").news__more.read-more Read More
+                .news-item
+                    img(src="img/news.jpg", alt="Lorem ipsum").news__img
+                    span.news__date 08/08/2018
+                    h2.news__title Lorem ipsum dolor sit consectetur adipisi
+                    p.news__excerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    a(href="#").news__more.read-more Read More
+                .news-item
+                    img(src="img/news.jpg", alt="Lorem ipsum").news__img
+                    span.news__date 08/08/2018
+                    h2.news__title Lorem ipsum dolor sit consectetur adipisi
+                    p.news__excerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    a(href="#").news__more.read-more Read More
+                .news-item
+                    img(src="img/news.jpg", alt="Lorem ipsum").news__img
+                    span.news__date 08/08/2018
+                    h2.news__title Lorem ipsum dolor sit consectetur adipisi
+                    p.news__excerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    a(href="#").news__more.read-more Read More
+                .news-item
+                    img(src="img/news.jpg", alt="Lorem ipsum").news__img
+                    span.news__date 08/08/2018
+                    h2.news__title Lorem ipsum dolor sit consectetur adipisi
+                    p.news__excerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    a(href="#").news__more.read-more Read More
+            a(href="#header").to-top
+                img(src="img/top.svg", alt="Scroll to top").to-top__arrow
+        include layout/footer.pug
+        include base/scripts.pug
